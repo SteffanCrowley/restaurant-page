@@ -1,4 +1,10 @@
 import "./style.css";
-import { component } from "./modules/contact";
+// import { loadContact } from "./modules/contact";
 
-document.body.appendChild(component());
+// document.body.appendChild(loadContact());
+
+// const btn = document.querySelector("#btn");
+
+// btn.addEventListener("click", () => {
+//   alert("Hello World");
+// });

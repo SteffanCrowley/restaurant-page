@@ -1,4 +1,4 @@
-function loadContact() {
+function loadHome() {
   const element = document.createElement("div");
   element.innerHTML = "contact";
   element.classList.add("hello");
@@ -6,4 +6,4 @@ function loadContact() {
   return element;
 }
 
-export { loadContact };
+export { loadHome };
