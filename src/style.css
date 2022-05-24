@@ -32,7 +32,8 @@ button {
   height: 50px;
 }
 
-.home {
+.home,
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,4 +41,37 @@ button {
   gap: 20px;
   font-size: 42px;
   padding: 30px;
+  font-family: "MyFont";
+}
+
+p {
+  font-size: 12px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 42px;
+  padding: 30px;
+  font-family: "MyFont";
+}
+
+.item {
+  display: flex;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("./modules/my-font.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
 }

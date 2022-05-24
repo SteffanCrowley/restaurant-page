@@ -13,7 +13,6 @@ function loadHome() {
   element.classList.add("home");
   element.appendChild(myPizza);
   container.appendChild(element);
-  console.log("helo");
   return element;
 }
 
