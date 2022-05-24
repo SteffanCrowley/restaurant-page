@@ -61,6 +61,8 @@ p {
 
 .item {
   display: flex;
+  border: thick double #ffae00;
+  padding: 10px;
 }
 
 .left {
