@@ -1,9 +1,20 @@
 import "./style.css";
-import { loadContact } from "./modules/contact";
 import { loadHome } from "./modules/home";
+import { loadNav } from "./modules/nav";
+import { loadContact } from "./modules/contact";
+import { loadMenu } from "./modules/menu";
 
-// document.body.appendChild(loadContact());
+init();
 
-const btn = document.querySelector("#btn");
+function init() {
+  loadNav();
+  loadHome();
+}
 
-btn.addEventListener("click", loadHome);
+document.addEventListener("click", (e) => {
+  const target = e.target.innerText;
+
+  if (target === "HOME") loadHome();
+  if (target === "MENU") loadMenu();
+  if (target === "CONTACT") loadContact();
+});

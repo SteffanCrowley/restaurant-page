@@ -1,10 +1,6 @@
 import Pizza from "./pizza.jpg";
 import { loadNav } from "./nav";
-
-function clear() {
-  const container = document.querySelector("#content");
-  container.innerHTML = "";
-}
+import { clear } from "./clear";
 
 function loadHome() {
   clear();
@@ -17,6 +13,7 @@ function loadHome() {
   element.classList.add("home");
   element.appendChild(myPizza);
   container.appendChild(element);
+  console.log("helo");
   return element;
 }
 
